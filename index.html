@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kişisel Tanıtım Sayfası</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ferdi Korkut</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        beatae.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#egitim">Eğitim</a></li>
+          <li><a href="#hobiler">Hobiler</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hakkimda">
+        <h2>Hakkımda</h2>
+        <img
+          src="assets/img/profil-resmi.jpeg"
+          alt="profil-resmi"
+          width="250px"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, esse.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, esse.
+        </p>
+      </section>
+      <section id="egitim">
+        <h2>Eğitim Bilgileri</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+          <thead>
+            <tr>
+              <th>Baslik 1</th>
+              <th>Baslik 2</th>
+              <th>Baslik 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Veri 1</td>
+              <td>Veri 2</td>
+              <td>Veri 3</td>
+            </tr>
+            <tr>
+              <td>Veri 4</td>
+              <td>Veri 5</td>
+              <td>Veri 6</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Toplam Veri Sayısı: 6</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="hobiler">
+        <h2>Hobilerim</h2>
+        <ul>
+          <li>Madde 1</li>
+          <li>Madde 2</li>
+          <li>Madde 3</li>
+        </ul>
+      </section>
+      <section id="iletisim">
+        <h2>İletişim Formu</h2>
+        <form action="register.php" method="post">
+          <fieldset>
+            <legend>İletişim Bilgileri</legend>
+            <label for="ad">Adınız:</label>
+            <input type="text" id="ad" name="ad" required minlength="2" /><br />
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required /><br />
+            <label for="telefon">Telefon:</label>
+            <input
+              type="tel"
+              id="telefon"
+              name="telefon"
+              required
+              placeholder="05xx-xxx-xxxx"
+              pattern="0[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              title="Lütfen başında sıfır olan 11 haneli numaranızı 05xx-xxx-xxxx formatında giriniz."
+            />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Ek Bilgiler</legend>
+            <input
+              type="radio"
+              id="cinsiyet-erkek"
+              name="cinsiyet"
+              value="erkek"
+            />
+            <label for="cinsiyet-erkek">Erkek</label>
+            <input
+              type="radio"
+              id="cinsiyet-kadin"
+              name="cinsiyet"
+              value="kadin"
+            />
+            <label for="cinsiyet-kadin">Kadın</label><br /><br />
+            <label for="ilgi-alanlari">Ilgi Alanları</label><br />
+            <select name="ilgi-alani" id="ilgi-alanlari">
+              <option value="">Seçiniz</option>
+              <option value="spor">Spor</option>
+              <option value="yazma">Yazma</option>
+              <option value="okuma">Okuma</option></select
+            ><br /><br />
+            <label for="mesaj">Mesaj:</label><br />
+            <textarea name="mesaj" id="mesaj" cols="40" rows="5"></textarea>
+          </fieldset>
+          <br />
+          <input type="submit" value="Gönder" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Ferdi Korkut. Tüm hakları saklıdır.</p>
+      <a href="mailto:info@ferdikorkut.com">İletişim</a>
+    </footer>
+  </body>
+</html>
